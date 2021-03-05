@@ -5,10 +5,7 @@ def my_callback(channel):
 	global ledState
 	if channel == 27:
 		ledState = not ledState
-		if ledState == GPIO.HIGH:
-			GPIO.output(25, GPIO.HIGH)
-		else:
-			GPIO.output(25, GPIO.LOW)
+		GPIO.output(25, ledState)
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(25, GPIO.OUT, initial=GPIO.LOW)
