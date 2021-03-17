@@ -22,3 +22,9 @@ Raspberry Pi初期設定画面のコマンド
    - クロック無し
    - 信号線が2本
    - デバイス1 ⇔ デバイス1 
+
+## Gitのコミット時のエディタをVimに変更
+[参考URL](https://qiita.com/yktk435/items/0383747c58ce82d94a51)
+
+コマンド
+` git config --global core.editor vim `
